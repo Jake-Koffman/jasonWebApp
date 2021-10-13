@@ -1,0 +1,11 @@
+The basic workflow idea goes as follows:
+
+We start a website running on localhost, which is necessary for the QR code scanner seen there. 
+Then, we start a python script "main", which does the following:
+--listens for changes to some folder. When a change detected (new hw scanned and uploaded), the shell script is run
+--Then, uploads .png to the website, and uses python to find out username and pw values
+--logs into drive, and uploads the file from the drive
+--from drive, uploads to google classroom
+--logs out the drive
+--listens for changes to the folder
+
